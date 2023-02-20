@@ -6,6 +6,7 @@ const debug = require('debug');
 const cors = require('cors');
 const { isProduction }= require('./config/keys')
 const csurf = require('csurf');
+require('./models/User')
 
 const usersRouter = require('./routes/api/users'); //update the import file path
 const tweetsRouter = require('./routes/api/tweets');
